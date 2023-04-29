@@ -8,5 +8,8 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./revanced/:/app/revanced-builder/revanced/
+    extra_hosts:
+      - "www.apkmirror.com:23.239.4.230"
+      - "apkmirror.com:23.239.4.230"
     ports:
       - 8000:8000
